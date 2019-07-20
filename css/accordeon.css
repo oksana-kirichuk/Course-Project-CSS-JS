@@ -1,0 +1,64 @@
+@media (max-width: 1200px) {
+  .choose-accordion {
+    width: 40%;
+  }
+}
+@media (max-width: 600px) {
+  .choose-accordion {
+    display: flex;
+    justify-content: center;
+  }
+}
+.choose-accordion .accordion-container {
+  position: relative;
+  max-width: 500px;
+  height: auto;
+  margin: 10px auto;
+}
+.choose-accordion .accordion-container .set {
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-left: 50px;
+}
+@media (max-width: 900px) {
+  .choose-accordion .accordion-container .set {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .choose-accordion .accordion-container .set {
+    width: 300px;
+  }
+}
+.choose-accordion .accordion-container .set a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  border-bottom: 1px solid #ddd;
+  transition: 0.5s all ease;
+}
+.choose-accordion .accordion-container .set a:active {
+  background-color: #eee;
+  color: #000;
+}
+.choose-accordion .accordion-container .set a i {
+  float: right;
+  margin-top: 2px;
+}
+.choose-accordion .accordion-container .set .content {
+  background-color: #eee;
+  border-bottom: 1px solid #ddd;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+.choose-accordion .accordion-container .set .content p {
+  padding: 15px;
+}
+.choose-accordion .accordion-container .set .content.active {
+  max-height: 500px;
+}

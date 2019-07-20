@@ -1,0 +1,71 @@
+// out: ../css/accordeon.css
+
+.choose-accordion {
+
+    @media (max-width: 1200px) {
+        width: 40%;
+    }
+    @media (max-width: 600px) {
+        display: flex;
+        justify-content: center;
+    }
+    .accordion-container {
+        position: relative;
+        max-width: 500px;
+        height: auto;
+        margin: 10px auto;
+        
+        .set {
+            position: relative;
+            width: 100%;
+            height: auto;
+            background-color: #fff;
+            margin-left: 50px;
+
+            @media (max-width: 900px) {
+                margin-left: 0px;
+                
+            }
+
+            @media (max-width: 600px) {
+                width: 300px;                
+            }
+
+            a {
+                display: block;
+                padding: 10px 15px;
+                text-decoration: none;
+                color: #555;
+                font-weight: 600;
+                border-bottom: 1px solid #ddd;
+                transition: 0.5s all ease;
+
+                &:active {
+                    background-color:#eee;
+                    color: #000;
+                }
+                
+                i {
+                    float: right;
+                    margin-top: 2px;
+                }
+            }
+
+            .content {
+                background-color: #eee;
+                border-bottom: 1px solid #ddd;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height .5s ease-out;
+
+                p {
+                    padding: 15px;
+                }  
+
+                &.active {
+                    max-height: 500px;
+                }         
+            }
+        }
+    }
+}
