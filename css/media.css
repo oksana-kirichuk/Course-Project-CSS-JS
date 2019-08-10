@@ -563,7 +563,10 @@
     margin-top: 10px;
   }
   .our-team .team-blocks .team-right-sidebar {
-    width: 300px;
+    width: 290px;
+  }
+  .our-team .team-blocks .team-right-sidebar .team-right-sidebar-content {
+    width: 200px;
   }
   .our-team .team-blocks .team-right-sidebar .team-progress {
     width: 60%;
