@@ -644,9 +644,6 @@ a {
 .our-team .team-blocks {
   display: flex;
 }
-.our-team .team-blocks .team-left-sidebar {
-  margin-right: 100px;
-}
 .our-team .team-blocks .team-left-sidebar .team-left-top h3 {
   color: #0f0f0f;
   font-size: 22px;

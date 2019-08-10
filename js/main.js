@@ -73,9 +73,30 @@ $(document).ready(function() {
 // });
 
 
-document.querySelectorAll('[data-mobile]').forEach(function(mobile) {
-  mobile.addEventListener('click', function(e) {
-      let target = this.getAttribute('data-mobile');
+
+
+
+// var mobileBtns = document.querySelectorAll('[data-mobile]');
+
+// for(var i = 0; i < mobileBtns.length; i++) {
+//   mobileBtns[i].addEventListener('click', function () {
+//     var target = this.getAttribute('data-mobile'); 
+    
+//     if(target === 'close') {
+//         document.querySelector('.overlay').classList.remove('active');
+//         document.querySelector('.mobile-nav').classList.remove('active');
+//     } else {
+//         document.querySelector('.overlay').classList.add('active');
+//         document.querySelector('.mobile-nav').classList.add('active');
+//     }
+//   });
+// }
+
+var mobileBtns = document.querySelectorAll('[data-mobile]');
+
+mobileBtns.forEach(function(mobile) {
+  mobile.addEventListener('click', function() {
+      var target = this.getAttribute('data-mobile');
 
       if(target === 'close') {
           document.querySelector('.overlay').classList.remove('active');
@@ -85,6 +106,3 @@ document.querySelectorAll('[data-mobile]').forEach(function(mobile) {
           document.querySelector('.mobile-nav').classList.add('active');
       }
 }) });
-
-
- 

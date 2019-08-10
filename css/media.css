@@ -562,8 +562,8 @@
   .our-team .team-blocks .team-left-sidebar .team-left-bottom .team-text .team-description {
     margin-top: 10px;
   }
-  .our-team .team-blocks .team-right-sidebar .team-right-sidebar-content {
-    width: 250px;
+  .our-team .team-blocks .team-right-sidebar {
+    width: 300px;
   }
   .our-team .team-blocks .team-right-sidebar .team-progress {
     width: 60%;
